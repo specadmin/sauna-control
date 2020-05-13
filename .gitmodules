@@ -1,0 +1,9 @@
+[submodule "lib/avr-oneWire"]
+	path = lib/avr-oneWire
+	url = https://github.com/specadmin/avr-oneWire
+[submodule "lib/avr-misc"]
+	path = lib/avr-misc
+	url = https://github.com/specadmin/avr-misc
+[submodule "lib/DS1820"]
+	path = lib/DS1820
+	url = https://github.com/specadmin/DS1820
