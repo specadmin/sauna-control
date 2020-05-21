@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name sauna)(type KiCad)(uri ${KIPRJMOD}/sauna.pretty)(options "")(descr ""))
+)

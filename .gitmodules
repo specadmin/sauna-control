@@ -7,3 +7,6 @@
 [submodule "lib/DS1820"]
 	path = lib/DS1820
 	url = https://github.com/specadmin/DS1820
+[submodule "lib/avr-debug"]
+	path = lib/avr-debug
+	url = https://github.com/specadmin/avr-debug
