@@ -3,6 +3,7 @@
 This is a control board for the sauna equipment. It includes thermostat and recycling motor control.
 
 ![Result view](https://github.com/specadmin/sauna-control/blob/master/photos/photo_2020-05-21_22-15-29-3.jpg)
+![Assembly drawing](https://github.com/specadmin/sauna-control/blob/master/photos/image_718.png)
 
 ## Get sources ##
 
