@@ -68,20 +68,13 @@ void throwError(BYTE error_code)
     display.hideDot();
     free(buf);
 
-    enable_timer();
+    mode = MODE_ERROR;
 
     // disable encoder rotations
     disable_encoder();
 
     // clear pending interrupts flags
     PCIFR = 1;
-
-    // set error mode
-    mode = MODE_ERROR;
-
-    beep(100); mdelay(100);
-    beep(100); mdelay(100);
-    beep(100); mdelay(100);
 }
 //-----------------------------------------------------------------------------
 __inline BYTE init_sensors()
@@ -247,6 +240,13 @@ int main()
         case MODE_ERROR:
             turn_off(HEATER);
             turn_off(BLOWER);
+            beep(100); mdelay(100);
+            beep(100); mdelay(100);
+            beep(100); mdelay(100);
+            while(mode == MODE_ERROR)
+            {
+                mdelay(100);
+            };
             break;
         case MODE_SET:
             display.print(target_temp);
